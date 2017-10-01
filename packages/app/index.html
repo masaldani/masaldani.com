@@ -1,0 +1,64 @@
+<html>
+
+<head>
+	<title>Masaldani</title>
+</head>
+
+<body>
+	<header>
+		<h1>Masaldani</h1>
+	</header>
+	<nav>
+		<ul>
+			<li>
+				Home
+			</li>
+			<li>About us</li>
+			<li>Products</li>
+			<li>Contact Us</li>
+		</ul>
+	</nav>
+	<aside>
+		<form action="/api/contact" method="post">
+			<h2>Enquiry</h2>
+			<fieldset>
+				<label for="Name">Full Name</label>
+				<input type="text" name="name" id="name">
+			</fieldset>
+			<fieldset>
+				<label for="email">Email ID</label>
+				<input type="email" name="email" id="email">
+			</fieldset>
+			<fieldset>
+				<label for="mobilenumber">Mobile Number</label>
+				<input type="tel" pattern="[0-9]{10}" name="phone" id="phone">
+			</fieldset>
+			<fieldset>
+				<legend>Message</legend>
+				<textarea name="message" id="message" cols="30" rows="10"></textarea>
+			</fieldset>
+			<button type="submit">Send</button>
+			<button type="reset">Reset</button>
+		</form>
+	</aside>
+	<footer>
+		<div class="social-links">
+			<ul>
+				<li class="icon-facebook">
+					<a href="https://www.facebook.com/shaily.cute">Facebook</a>
+				</li>
+				<li class="icon-linkedin">
+					<a href="https://www.linkedin.com/in/shailjashukla/">Linkedin</a>
+				</li>
+				<li class="icon-instagram">
+					<a href="https://www.instagram.com/?hl=en">Instagram</a>
+				</li>
+				<li class="icon-twitter">
+					<a href="https://twitter.com/followers">Twitter</a>
+				</li>
+			</ul>
+		</div>
+		&copy;copyright 2017</footer>
+</body>
+
+</html>

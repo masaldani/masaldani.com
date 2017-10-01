@@ -1,0 +1,24 @@
+{
+  "name": "masaldani",
+  "version": "1.0.0",
+  "description": "Official website of Masaldani",
+  "author": "Shailja Shukla<shailja.r.shukla@gmail.com>",
+  "homepage": "https://www.masaldani.com",
+  "repository": "github:masaldani/masaldani.com",
+  "license": "(MIT or GPL-3.0)",
+  "private": true,
+  "scripts": {
+    "serve": "NODE_ENV=development node server"
+  },
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5.0.0",
+    "yarn": ">=1.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "hapi": "^16.6.2",
+    "inert": "^4.2.1",
+    "mailgun-js": "^0.13.1"
+  }
+}
