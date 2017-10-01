@@ -2,15 +2,18 @@ if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
 }
 
-console.log(process.env.NODE_ENV);
-
+const Path = require("path");
 const Hapi = require("hapi");
 
 const server = new Hapi.Server();
 
 server.connection({
-  host: process.env.HOST || "localhost",
-  port: process.env.PORT || 8000
+  port: process.env.PORT || 8000,
+  routes: {
+    files: {
+      relativeTo: Path.join(__dirname, "packages")
+    }
+  }
 });
 
 server.register(require("inert"), err => {
@@ -20,9 +23,19 @@ server.register(require("inert"), err => {
 
   server.route({
     method: "GET",
+    path: "/{param*}",
+    handler: {
+      directory: {
+        path: "app"
+      }
+    }
+  });
+
+  server.route({
+    method: "GET",
     path: "/",
     handler(request, reply) {
-      reply.file("./packages/app/index.html");
+      reply.file("app/index.html");
     }
   });
 });
@@ -48,14 +61,12 @@ server.route({
 
     if (email || phone) {
       mailgun.messages().send(data, (error, body) => {
-		console.log(body);
-		console.log(data);
+        console.log(body);
+        console.log(data);
       });
     }
-    
-    return reply(
-      'Email sent!'
-	);
+
+    return reply("Email sent!");
   }
 });
 
