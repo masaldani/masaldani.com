@@ -1,0 +1,159 @@
+@import "https://fonts.googleapis.com/css?family=Josefin+Slab";
+
+body {
+  font-family: "Josefin Slab";
+  height: 100vh;
+  background-color: #DF0D0D;
+  color: white;
+  
+}
+.navigation li{
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.social-links li{
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-links li a {
+  text-decoration: none;
+  text-indent: -9999px;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+ }
+  
+.icon-facebook{
+  background-image:url("https://image.flaticon.com/icons/svg/69/69407.svg");
+  background-repeat: no-repeat;
+ background-position:center;
+  width:60px;
+  height:60px;
+ }
+.icon-linkedin{
+  background-image:url("https://image.flaticon.com/icons/svg/8/8707.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width:50px;
+  height:60px;
+ }
+.icon-instagram{
+  background-image: url("https://image.flaticon.com/icons/svg/69/69366.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width:60px;
+  height:60px;
+ }
+
+.icon-twitter{
+  background-image: url("https://image.flaticon.com/icons/svg/69/69480.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width:60px;
+  height:60px;
+ }
+.icon-instagram:hover{
+  background-image:url("https://image.flaticon.com/icons/svg/174/174855.svg");
+}
+.icon-linkedin:hover{
+  background-image:url("https://image.flaticon.com/icons/svg/174/174857.svg");
+}
+
+.icon-facebook:hover{
+  background-image:url("https://image.flaticon.com/icons/svg/174/174848.svg");
+ }
+.icon-twitter:hover{
+  background-image:url("https://image.flaticon.com/icons/svg/174/174876.svg");
+ }
+
+
+
+.section-project {
+  padding: 50px 0;
+  position: relative;
+  background-color: #222;
+}
+
+.section__title, .section__subtitle {
+  text-align: center;
+  color: white;
+  display: block;
+}
+
+.section__title {
+  font-size: 3em;
+  line-height: 1;
+  margin: 0 0 20px;
+}
+
+.section__subtitle {
+  font-size: 1.2em;
+  line-height: 1.5;
+  opacity: .5;
+}
+.section__subtitle a {
+  color: inherit;
+}
+
+.carousel {
+  position: relative;
+  padding: 50px 0;
+}
+
+.project-strip {
+  margin: 150px 0 150px;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+.project-strip .project {
+  cursor: pointer;
+}
+.project-strip img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.project-screen {
+  width: 768px;
+  height: 451px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.project-screen .project-detail {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 578px;
+  height: 361px;
+  margin: 32px auto 0;
+  z-index: 1;
+  background-color: #333;
+}
+.project-screen .screen-frame {
+  content: " ";
+  width: 768px;
+  height: 451px;
+  position: absolute;
+  /*background-image: url("./images/window.jpg");*/
+  background-repeat: no-repeat;
+}
+.project-screen .project {
+  margin-right: -100%;
+  float: left;
+  cursor: move;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}

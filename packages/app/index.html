@@ -1,47 +1,102 @@
+<!DOCTYPE HTML>
 <html>
 
 <head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Masaldani</title>
-	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 	<header>
 		<h1>Masaldani</h1>
 	</header>
-	<nav>
-		<ul>
-			<li>
-				Home
-			</li>
-			<li>About us</li>
-			<li>Products</li>
-			<li>Contact Us</li>
-		</ul>
-	</nav>
-	<aside>
-		<form action="/api/contact" method="post">
-			<h2>Enquiry</h2>
-			<fieldset>
-				<label for="Name">Full Name</label>
-				<input type="text" name="name" id="name">
-			</fieldset>
-			<fieldset>
-				<label for="email">Email ID</label>
-				<input type="email" name="email" id="email">
-			</fieldset>
-			<fieldset>
-				<label for="mobilenumber">Mobile Number</label>
-				<input type="tel" pattern="[0-9]{10}" name="phone" id="phone">
-			</fieldset>
-			<fieldset>
-				<legend>Message</legend>
-				<textarea name="message" id="message" cols="30" rows="10"></textarea>
-			</fieldset>
-			<button type="submit">Send</button>
-			<button type="reset">Reset</button>
-		</form>
-	</aside>
+
+	<div class="section section-project">
+		<div class="navigation">
+			<nav>
+				<ul>
+					<li>Home</li>
+					<li>About us</li>
+					<li>Products</li>
+					<li>Contact Us</li>
+				</ul>
+			</nav>
+		</div>
+
+		<h4 class="section__title">Masaldani</h4>
+		<p class="section__subtitle">Masaldani means box of spices, we brought here collection of Indian Spices full of flavour and aroma which makes your food
+			beautiful and aromatic.</p>
+
+		<div class="carousel">
+			<div class="carousel">
+				<div class="project-strip">
+					<div class="project"><img src="./images/imagesblur/clove.jpg" alt="" /></div>
+					<div class="project"><img src="\images\imagesblur\cashew.jpg" alt="" /></div>
+					<div class="project"><img src="\images\imagesblur\chili.jpg" alt="" /></div>
+					<div class="project"><img src="\images\imagesblur\cinnamon.jpg" alt="" /></div>
+					<div class="project"><img src="\images\imagesblur\coffee.jpg" alt="" /></div>
+					<div class="project"><img src="\images\imagesblur\spices.jpg" alt="" /></div>
+					<div class="project"><img src="\images\imagesblur\spices1.jpg" alt="" /></div>
+					<div class="project"><img src="\images\imagesblur\spices3.jpg" alt="" /></div>
+					<div class="project"><img src="\images\imagesblur\jeera.jpg" alt="" /></div>
+				</div>
+				<div class="project-screen">
+					<div class="project-detail">
+						<div class="project"><img src=".\images\cooking.jpg" width="578px" height="361px" alt="" /></div>
+						<div class="project"><img src=".\images\cardamon.jpg" width="578px" height="361px" alt="" /></div>
+						<div class="project"><img src=".\images\cardamon1.jpg" width="578px" height="361px" alt="" /></div>
+						<div class="project"><img src=".\images\spices.jpg" width="578px" height="361px" alt="" /></div>
+						<div class="project"><img src=".\images\coriander.jpg" width="578px" height="361px" alt="" /></div>
+						<div class="project"><img src=".\images\anis.jpg" width="578px" height="361px" alt="" /></div>
+						<div class="project"><img src=".\images\cinnamon.jpg" width="578px" height="361px" alt="" /></div>
+						<div class="project"><img src=".\images\chili.jpg" width="578px" height="361px" alt="" /></div>
+						<div class="project"><img src=".\images\carda1.jpg" width="578px" height="361px" alt="" /></div>
+					</div>
+					<div class="screen-frame"></div>
+				</div>
+			</div>
+		</div>
+		<div class="grid-container">
+			<div>
+				<h4 class="section__title">Cardamom</h4>
+				<p class="section__subtitle">
+					Cardamom has a strong, unique taste, with an intensely aromatic, resinous fragrance.Cardamom has a strong, unique taste,
+					with an intensely aromatic, resinous fragrance. Black cardamom has a distinctly more smokey, though not bitter, aroma,
+					with a coolness some consider similar to mint. Green cardamom is one of the more expensive spices by weight, but little
+					is needed to impart flavor. It is best stored in the pod as exposed or ground seeds quickly lose their flavor. It is
+					regarded as the Queen of Spices and is one of the most expensive spice </p>
+			</div>
+
+			<aside>
+				<form action="/api/contact" method="post">
+					<h2>Enquiry</h2>
+					<fieldset>
+						<label for="Name">Full Name</label>
+						<input type="text" name="name" id="name">
+					</fieldset>
+					<fieldset>
+						<label for="email">Email ID</label>
+						<input type="email" name="email" id="email">
+					</fieldset>
+					<fieldset>
+						<label for="mobilenumber">Mobile Number</label>
+						<input type="tel" pattern="[0-9]{10}" name="phone" id="phone">
+					</fieldset>
+					<fieldset>
+						<legend>Message</legend>
+						<textarea name="message" id="message" cols="30" rows="10"></textarea>
+					</fieldset>
+					<button type="submit">Send</button>
+					<button type="reset">Reset</button>
+				</form>
+			</aside>
+		</div>
+	</div>
 	<footer>
 		<div class="social-links">
 			<ul>
@@ -59,7 +114,12 @@
 				</li>
 			</ul>
 		</div>
-		&copy;copyright 2017</footer>
+		<div style="line-height:60px">&copy;copyright 2017</div>
+	</footer>
+
+	<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script>
+	<script src="./carousel.js"></script>
 </body>
 
 </html>
